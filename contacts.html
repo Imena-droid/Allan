@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate Housing | Contact Form</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: darkgrey;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-weight: lighter;
+    }
+
+    
+  nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;   /* ✅ keep full width */
+  z-index: 1000;
+  height: 60px;  /* ✅ define nav height */
+}
+
+.contacts {
+  padding: 20px;
+  text-align: center;
+  padding-top: 80px; /* ✅ push just enough below nav */
+  margin-top: 0;     /* remove the big gap */
+}
+
+    nav img {
+      height: 50px;
+      width: auto;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 15px;
+    }
+
+    nav ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      background: #007BFF;
+    }
+    .contacts h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .contacts p {
+      color: #333;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    
+    form {
+      background: #ebebeb;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto 50px;
+    }
+
+    form h2 {
+      text-align:justify;
+      margin-bottom: 0;
+      color: #333;
+    
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #444;
+      text-align: left;
+    }
+
+    form input,
+    form textarea {
+      width: 95%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    form textarea {
+      resize: vertical;
+      min-height: 120px;
+      width: 95%;
+    }
+
+    form button {
+      width: 100%;
+      padding: 14px;
+      background: #0077cc;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    form button:hover {
+      background: #005fa3;
+      transform: scale(1.03);
+    }
+
+    
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: auto;
+    }
+
+    footer a {
+      color: #007BFF;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    footer a:hover {
+      color: #0056b3;
+    }
+
+    .social-media {
+      margin-bottom: 10px;
+    }
+
+    .social-media h3 {
+      margin: 0 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <img src="logo9.png" alt="Real Estate Housing logo">
+    <ul>
+      <li><a class="active" href="Index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="contacts.html">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <section class="contacts">
+    <h2>Contact Us</h2>
+    <p>In case you want to get in touch:</p>
+
+    <form action="mailto:info@realestatehousing.com" method="post" enctype="text/plain">
+        <p><strong>Fill The Form:</strong></p>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="social-media">
+      <h3>Follow us on</h3>
+      <a href="https://facebook.com/realestatehousing" target="_blank">Facebook</a> |
+      <a href="https://twitter.com/realestatehousing" target="_blank">Twitter</a> |
+      <a href="https://instagram.com/realestatehousing" target="_blank">Instagram</a>
+    </div>
+    <p>&copy; 2025 Real Estate Housing. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Real Estate Housing | About us</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background: linear-gradient(to right, #f5f5f5, #e0e0e0);
+                display: flex;
+                flex-direction: column;
+            }
+            nav {
+  display: flex;
+  align-items: center;       
+  justify-content: space-between; 
+  background-color: #333;
+  padding: 0 20px;           /
+}
+
+nav img {
+  height: 50px;  
+  width: 10%; 
+}
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                background-color: #333;
+                display: flex;
+                justify-content: center;
+            }
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+                transition: background 0.3s;
+            }
+            li a:hover {
+                background: #007BFF;
+            }
+            h1 {
+                font-size: 35px;
+                text-align: center;
+                color: #333;
+                margin-top: 20px;
+            }
+            p {
+                color: black;
+                text-align: center;
+                font-size: 20px;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            .column {
+                float: left;
+                width: 30%;
+                padding: 0 10px;
+            }
+            .row {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
+                flex-grow: 1;
+                padding: 20px;
+            }
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            @media screen and (max-width: 600px) {
+                .column {
+                    width: 80%;
+                    display: block;
+                    margin-bottom: 20px;
+                }
+            }
+            .card {
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                padding: 20px;
+                text-align: center;
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+            .card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            }
+            .card h2 {
+                color: #007BFF;
+                margin-bottom: 10px;
+            }
+            footer {
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 5px;
+                margin-top:auto;
+                width: 100%;
+                position:relative;
+                left: 0;
+                bottom: 0;
+            }
+                footer a{
+      color: #007BFF;
+            }
+            .about-hero {
+                background: url("house5.jpg") center/cover no-repeat;
+                color: white;
+                padding: 60px 20px;
+                text-align: center;
+            
+                box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+                animation: fadeIn 1.5s ease-in-out;
+            }
+            .about-hero h1 {
+                color: white;
+                font-size: 40px;
+                text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+            }
+            .about-hero p {
+                color: #f5f5f5;
+                font-size: 22px;
+            }
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(-30px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <img src="logo9.png" alt="Real Estate Housing logo">
+            <ul>
+                <li><a class="active" href="Index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="about-hero">
+            <h1>ABOUT REAL ESTATE HOUSING.</h1>
+            <p>Your trusted partner in finding the perfect home!</p>
+        </section>
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <h2>Who We Are</h2>
+                    <p>We believe everyone deserves a home they love. That’s why we connect clients with the right houses in the best locations at affordable prices with reliable services.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h2>Our Mission</h2>
+                    <p>To provide high-quality real estate services that ensure client satisfaction, trust, and value for money. We also aim to expand our services worldwide.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h2>Why Choose Us?</h2>
+                    <p>We offer discounts, reliable services and unmatched expertise in the real estate market. With us, there are no failed expectations or errors related to our services.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+             <div class="social-media">
+
+  <h3>Follow us on</h3>
+  <a href="https://facebook.com/realestatehousing" target="_blank">Facebook</a> |
+  <a href="https://twitter.com/realestatehousing" target="_blank">Twitter</a> |
+  <a href="https://instagram.com/realestatehousing" target="_blank">Instagram</a> |
+</div>
+            <h4>&copy;2025 Real Estate Housing. All Rights Reserved.</h4>
+        </footer>
+    </body>
+</html>

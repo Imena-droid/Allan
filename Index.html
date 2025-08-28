@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate Housing | Find Your Dream Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: beige;
+    }
+    nav {
+  display: flex;
+  align-items: center;       
+  justify-content: space-between; 
+  background-color: #333;
+  padding: 0 20px;           
+}
+
+nav img {
+  height: 50px;  
+  width: 10%; 
+}
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #333;
+      display: flex;
+      justify-content: flex-end;
+    }
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    li a:hover {
+      background: #007BFF;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin: 40px 0 20px;
+    }
+
+    
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: url('home.jpg') no-repeat center/cover;
+      color: white;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .hero h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin: 20px 0;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    
+    .property-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .property-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .property-card:hover {
+      transform: translateY(-5px);
+    }
+    .property-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .property-card h4 {
+      margin: 15px 0 5px;
+      font-size: 1.3rem;
+      text-align: center;
+    }
+    .property-card p {
+      color: #555;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+   
+    .about {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      font-size: 1.1rem;
+      text-align: center;
+      color: #333;
+    }
+    .stats {
+      background: #007BFF;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: auto;
+      margin-top: 30px;
+    }
+    .stat h2 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    .stat p {
+      margin: 5px 0 0;
+      font-size: 1.1rem;
+    }
+h2, p{
+  text-align: center;
+}
+   
+    .testimonials {
+      background: #f8f8f8;
+      padding: 40px 20px;
+    }
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .testimonial {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      font-style: italic;
+    }
+    .testimonial h4 {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #007BFF;
+    }
+
+    
+    .contact {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .contact button {
+      background: #007BFF;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .contact button:hover {
+      background: #0056b3;
+    }
+
+    
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+    footer a{
+      color: #007BFF;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <img src="logo9.png" alt="Real Estate Housing logo">
+  <ul>
+    <li><a class="active" href="Index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="contacts.html">Contact</a></li>
+  </ul>
+  </nav>
+
+ <section id="hero" class="hero">
+    <div class="hero-content">
+  <h1>REAL ESTATE HOUSING</h1>
+      <h2>Your Dream Home Awaits</h2>
+      <p>Find the perfect property for you and your family — from modern apartments to luxury villas.</p>
+    </div>
+  </section> 
+
+
+  <section id="properties" class="properties">
+    <h3>Featured Properties</h3>
+    <div class="property-grid">
+      <div class="property-card">
+        <img src="house2.jpg" alt="Luxury Villa">
+        <h4>Luxury Villa</h4>
+        <p>5 Bed • 4 Bath • Ocean View</p>
+      </div>
+      <div class="property-card">
+        <img src="house3.jpg" alt="Modern Apartment">
+        <h4>Modern Apartment</h4>
+        <p>2 Bed • 2 Bath • City Center</p>
+      </div>
+      <div class="property-card">
+        <img src="house9.jpg" alt="Family Home">
+        <h4>Family Home</h4>
+        <p>4 Bed • 3 Bath • Suburban Area</p>
+      </div>
+    </div>
+  </section>
+ 
+  <section id="about" class="about">
+    <h3>Why Choose Us?</h3>
+    <p>We’ve helped thousands of clients find their perfect home. Our expert agents, personalized service, and wide property selection ensure you get the best value for your investment.</p>
+  </section>
+
+  <section class="stats">
+    <h3>Our Achievements</h3>
+    <div class="stats-grid">
+      <div class="stat">
+        <h2>500+</h2>
+        <p>Happy Clients</p>
+      </div>
+      <div class="stat">
+        <h2>300+</h2>
+        <p>Properties Sold</p>
+      </div>
+      <div class="stat">
+        <h2>200+</h2>
+        <p>Active Listings</p>
+      </div>
+      <div class="stat">
+        <h2>10+</h2>
+        <p>Years of Experience</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h3>What Our Clients Say</h3>
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        <p>"The process was smooth and stress-free. We found our dream villa within a week!"</p>
+        <h4>- Ella & Jack</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Excellent service! The agents were professional and guided us every step of the way."</p>
+        <h4>- Manzi K.</h4>
+      </div>
+      <div class="testimonial">
+        <p>"I highly recommend this real estate company. They truly care about their clients."</p>
+        <h4>- Aline R.</h4>
+      </div>
+    </div>
+  </section>
+
+  <h2>Special Note</h2><p>All our houses are located at Rubavu district,if you are pleased with our products and have rented/bought a house,contact us and we will take you to the house you chose!!</p>
+ 
+  <section id="contact" class="contact">
+    <h3>Ready to Start Your Journey?</h3>
+    <p>Contact us today to schedule a viewing or get more details.</p>
+   <a href="contacts.html"><button>Get in Touch</button></a>
+  </section>
+  
+  <footer>
+ <div class="social-media">
+
+  <h3>Follow us on</h3>
+  <a href="https://facebook.com/realestatehousing" target="_blank">Facebook</a> |
+  <a href="https://twitter.com/realestatehousing" target="_blank">Twitter</a> |
+  <a href="https://instagram.com/realestatehousing" target="_blank">Instagram</a> |
+</div>
+    <p>&copy;2025 Real Estate Housing. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
